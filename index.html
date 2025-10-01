@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sekar's Portfolio</title>
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+<link rel="stylesheet" href="style.css">
+<link rel="shortcut icon" href="Assets/Desain tanpa judul (4).png" type="image/x-icon">
+
+
+
+    <!-- navbarnya -->
+    <style>
+      body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+      }
+
+      /* --- LOGO / BRAND --- */
+      .logo {
+        cursor: default;
+        position: fixed;
+        top: 20px;
+        left: 30px;
+        font-size: 40px;
+        font-weight: bold;
+        z-index: 1000;
+        background: linear-gradient(
+          to right,
+          #f644de,
+          #f5b833
+        ); /* gradasi kayak navbar home */
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
+
+      .logo span {
+        background: linear-gradient(
+          to right,
+          #ff6b6b,
+          #5f27cd
+        ); /* beda warna untuk "A.R." */
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
+
+      /* NAVBAR */
+      .navbar {
+        position: fixed;
+        top: 50%;
+        right: 0; /* biar ada botak kecil keliatan */
+        transform: translateY(-50%);
+        display: flex;
+        flex-direction: column;
+        gap: 30px; /* jarak antar tombol lebih lega */
+      }
+
+      .navbar a {
+        text-decoration: none;
+        color: rgb(253, 253, 253);
+        font-weight: bold;
+        padding: 40px 50px; /* lebih gede dari sebelumnya */
+        border-radius: 50px 0 0 50px; /* kanan botak */
+        text-align: center;
+        font-size: 30px; /* lebih gede biar enak dibaca */
+        transform: translateX(130px); /* posisi sembunyi awal */
+        transition: transform 0.4s ease;
+      }
+
+      /* Warna gradasi tombol */
+      .navbar a:nth-child(1) {
+        background: linear-gradient(to right, #ff9ff3, #feca57);
+        transition-delay: 0s;
+      }
+      .navbar a:nth-child(2) {
+        background: linear-gradient(to right, #feca57, #ff6b81);
+        transition-delay: 0.1s;
+      }
+      .navbar a:nth-child(3) {
+        background: linear-gradient(to right, #ff9f43, #feca57);
+        transition-delay: 0.2s;
+      }
+      .navbar a:nth-child(4) {
+        background: linear-gradient(to right, #ff6b6b, #5f27cd);
+        transition-delay: 0.3s;
+      }
+      .navbar a:nth-child(5) {
+        background: linear-gradient(to right, #ff9ff3, #ff6b6b);
+        transition-delay: 0.4s;
+      }
+
+      /* kalau hover navbar, tiap tombol muncul satu-satu */
+      .navbar:hover a {
+        transform: translateX(0);
+      }
+
+      /* efek hover tombol */
+      .navbar a:hover {
+        transform: translateX(10px) scale(1.05);
+      }
+    </style> 
+    
+    
+    <!-- end navbar -->
+  </head>
+  <body>
+ <!-- LOGO -->
+    <div class="logo">
+      Sekar <span>A.R.</span>
+      <i class="bx bx-menu" id="menu-icon"></i>
+    </div>
+    <!-- end logo -->
+     <!-- HOME SECTION -->
+  <section class="home" id="home">
+    <div class="home-left">
+      <div class="img-wrapper">
+        <img src="Assets/hhe.png" alt="Sekar" class="profile-img">
+      </div>
+
+    </div>
+    <div class="home-content">
+      <h1>
+        <span>Welcome!</span><br>
+        <span>It's Me</span><br>
+        <span>Sekar</span><br>
+        <span>Amardien</span><br>
+        <span>Ridlo</span><br>
+      </h1> 
+      
+      <p><span>welcome to my personal website!</span><br>
+         <span>I love building websites and creating
+          awesome digital experiences</span>. 🚀<p>
+
+            <a href="#" class="btn">Download CV</a>
+
+            <div class="social-icons">
+          <a href="#"><i class="bx bxl-facebook"></i></a>
+          <a href="#"><i class="bx bxl-twitter"></i></a>
+          <a href="#"><i class="bx bxl-instagram"></i></a>
+          <a href="#"><i class="bx bxl-linkedin"></i></a>
+        </div>
+    </div>
+     
+        
+     
+     
+        
+      </div>
+  </section>
+    
+    <div class="navbar">
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#services">Services</a>
+      <a href="#portfolio">Portfolio</a>
+      <a href="#contact">Contact</a>
+    </div>
+   
+<!-- About -->
+ <!-- ABOUT SECTION -->
+<!-- ===== ABOUT SECTION ===== -->
+<section id="about" class="about">
+  <div class="about-bg"></div>
+  <div class="about-content">
+    <div class="about-title">About</div>
+    <p>
+      Hi! I'm Sekar, a passionate RPL student, developer, and artist 🎨.  
+      I love creating unique projects, exploring new technologies,  
+      and bringing creative ideas to life! 🚀
+    </p>
+    <p>
+      My journey in tech started with curiosity and grew into  
+      something I'm really proud of. Let's create something awesome together!
+    </p>
+  </div>
+</section>
+
+
+  <!--end about  -->
+ <!-- Services Section -->
+<section id="services">
+  <h2>Our <span>Services</span></h2>
+  <div class="services-container">
+    
+    <div class="service-box">
+        <i class='bx bx-code-alt' style='color:#ff0400; font-size: 60px' ></i>
+      <img src="Assets/anak kici.png" alt="icon" class="service-img">
+      
+      <h3>Web Development</h3>
+      <p>I build responsive and modern websites with love 💖</p>
+      <a href="#" class="btn">Learn More</a>
+    </div>
+
+    <div class="service-box">
+      <i class='bx bx-paint' style='color:#ff8c00; font-size: 60px' ></i>
+      <img src="Assets/anak kici2.png" alt="icon" class="service-img">
+      
+      <h3>UI/UX Design</h3>
+      <p>Designing creative and user-friendly interfaces 🎨✨</p>
+      <a href="#" class="btn">Learn More</a>
+    </div>
+
+    <div class="service-box">
+       <i class='bx bxs-cog' style='color:#fffb01; font-size: 60px'  ></i>
+      <img src="Assets/anak kici3.png" alt="icon" class="service-img">
+     
+      <h3>Automation</h3>
+      <p>Helping automate tasks and workflows 🚀</p>
+      <a href="#" class="btn">Learn More</a>
+    </div>
+
+  </div>
+</section>
+
+
+<!-- end Services -->
+<section class="portfolio" id="portfolio">
+  <h2>Portfolio</h2>
+  <div class="portfolio-container">
+    <!-- item 1 -->
+    <div class="portfolio-box">
+      <img src="Assets/project1.png" alt="Project 1">
+      <div class="portfolio-overlay">
+        <h3> Belajar Bangunan</h3>
+        <p>Company website</p>
+      </div>
+    </div>
+
+    <!-- item 2 -->
+    <div class="portfolio-box">
+      <img src="Assets/ser.png" alt="Project 2">
+      <div class="portfolio-overlay">
+        <h3>canva</h3>
+        <p>200 Design</p>
+      </div>
+    </div>
+
+    <!-- item 3 -->
+    <div class="portfolio-box">
+      <img src="Assets/first.png" alt="Project 3">
+      <div class="portfolio-overlay">
+        <h3>my 'first' portfolio</h3>
+        <p>the first project at IDN</p>
+      </div>
+    </div>
+
+    <!-- item 4 -->
+    <div class="portfolio-box">
+      <img src="Assets/watermelon.png" alt="Project 4">
+      <div class="portfolio-overlay">
+        <h3>Watermelon code</h3>
+        <p>my very first website with google site</p>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- Contact Section -->
+<section id="contact" class="contact">
+  <h2>Contact <span>Me</span></h2>
+  <div class="contact-container">
+    <form class="contact-form">
+      <input type="text" placeholder="Your Name" required>
+      <input type="email" placeholder="Your Email" required>
+      <textarea placeholder="Your Message" rows="5" required></textarea>
+      <button type="submit" class="btn">Send Message</button>
+    </form>
+
+    <div class="contact-info">
+      <h3>Get in Touch</h3>
+      <p><i class='bx bx-map'></i> Tangerang Selatan, Indonesia</p>
+      <p><i class='bx bx-envelope'></i> sekaramardienridlo@gmail.com</p>
+      <p><i class='bx bx-phone'></i> +62 -------</p>
+    </div>
+  </div>
+</section>
+
+
+ <!-- Tambahin scriptnya di bawah sebelum </body> -->
+<script>
+  document.querySelectorAll('.about-title, .about-content p').forEach(el => {
+    let letters = el.textContent.split('');
+    el.innerHTML = letters.map(l => {
+      if (l === ' ') return ' ';
+      return `<span>${l}</span>`;
+    }).join('');
+  });
+</script>   
+<!-- ✨ TARO SCRIPT DI SINI -->
+<script>
+  // Split huruf
+  document.querySelectorAll('.about-title, .about-content p').forEach(el => {
+    let letters = el.textContent.split('');
+    el.innerHTML = letters.map(l => {
+      if (l === ' ') return ' ';
+      return `<span>${l}</span>`;
+    }).join('');
+  });
+
+  // Spotlight effect ikut cursor
+  const aboutSection = document.querySelector('.about');
+  const aboutBg = document.querySelector('.about-bg');
+
+  aboutSection.addEventListener('mousemove', (e) => {
+    let x = e.clientX;
+    let y = e.clientY;
+    aboutBg.style.background = `radial-gradient(circle at ${x}px ${y}px, #ff6ec7 0%, transparent 60%)`;
+  });
+  
+
+</script>
+<script>
+  const menuIcon = document.querySelector("#menu-icon");
+  const navbar = document.querySelector(".navbar");
+
+  menuIcon.onclick = () => {
+    navbar.classList.toggle("show");
+  };
+</script>
+
+  </body>
+</html>
+
+
